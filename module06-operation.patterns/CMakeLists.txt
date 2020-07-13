@@ -19,3 +19,5 @@ set(BOOST_LIBRARY_DIRS "${BOOST_ROOT}/stage/lib")
 include_directories(${BOOST_INCLUDE_DIRS})
 add_executable(msm state/msm.cpp)
 target_link_libraries(msm ${BOOST_LIBRARY_DIRS})
+
+add_executable(interpreter interpreter/handmade.cpp)

@@ -100,7 +100,7 @@ struct SizeSpecification : Specification<Product> {
     explicit SizeSpecification(const Size size)
             : size{size} {
     }
-    
+
     bool is_satisfied(Product *item) override {
         return item->size == size;
     }
